@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+require 'bundler/setup'
+
+$LOAD_PATH << "#{File.dirname(__FILE__)}/../lib"
+require 'pomodoro/main/daemon'
+
+main = Pomodoro::Main::Daemon.new
+main.run
