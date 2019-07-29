@@ -5,5 +5,5 @@ task :install do
 end
 
 task :install_source_only do
-  sh 'rsync -av --delete ./bin ./lib ~/opt/pomodorod'
+  sh 'rsync -av --delete ./bin ./lib ./pomodorod.service ~/opt/pomodorod'
 end
