@@ -4,6 +4,6 @@ task :install do
   rm_rf %w(.bundle bundle)
 end
 
-task :install_source_only do
+task 'install-source-only' do
   sh 'rsync -av --delete ./bin ./lib ./pomodorod.service ~/opt/pomodorod'
 end

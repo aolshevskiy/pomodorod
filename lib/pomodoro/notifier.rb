@@ -17,7 +17,7 @@ module Pomodoro
     end
 
     def libnotify!
-      Libnotify.show(:icon_path => 'gnome-break-timer', :summary => 'Timer done!')
+      Libnotify.show(:icon_path => 'gnome-break-timer', :summary => 'Pomodorod', :body => 'Timer done!')
     end
 
     def sound!

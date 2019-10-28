@@ -11,4 +11,5 @@ gem 'libnotify'
 group :development do
   gem 'rspec'
   gem 'rake'
+  gem 'irb'
 end
