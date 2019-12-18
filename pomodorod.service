@@ -3,7 +3,6 @@ Description=Pomodoro Timer Daemon
 
 [Service]
 Type=simple
-WorkingDirectory=%h/opt/pomodorod
 ExecStart=%h/opt/pomodorod/bin/pomodorod
 
 [Install]

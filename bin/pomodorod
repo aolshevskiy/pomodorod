@@ -1,7 +1,8 @@
-#!/usr/bin/env ruby
+#!/usr/bin/ruby
+ENV['BUNDLE_GEMFILE'] = "#{__dir__}/../Gemfile"
 require 'bundler/setup'
 
-$LOAD_PATH << "#{File.dirname(__FILE__)}/../lib"
+$LOAD_PATH << "#{__dir__}/../lib"
 require 'pomodoro/main/daemon'
 
 main = Pomodoro::Main::Daemon.new
