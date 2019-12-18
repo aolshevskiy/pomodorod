@@ -7,5 +7,6 @@ DESTDIR=~/opt/pomodorod
 rsync -av --delete ./ $DESTDIR
 
 cd $DESTDIR
-bundle config --local path bundle
-bundle install --standalone --without development
+bundle config set --local path vendor/bundle
+bundle config set --local without development
+bundle install
